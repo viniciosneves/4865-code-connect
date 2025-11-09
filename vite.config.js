@@ -16,11 +16,7 @@ export default defineConfig({
                 functions: 60,
                 lines: 60,
             },
-            exclude: [
-                'node_modules',
-                'src/tests',
-                'cypress',
-            ]
-        }
+            exclude: ['node_modules', 'src/tests', 'cypress'],
+        },
     },
 })
