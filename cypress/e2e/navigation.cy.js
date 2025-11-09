@@ -42,6 +42,8 @@ describe('Navegação do Feed para Post', () => {
 
         // Verificar que o feed está visível com posts usando texto ao invés de h2
         cy.contains('Introdução ao React', { timeout: 10000 }).should('exist')
+        
+        cy.contains('Falha proposital', { timeout: 10000 }).should('exist')
 
         // Encontrar o link "Ver detalhes" associado ao post "Introdução ao React"
         // Usando uma estratégia mais robusta: encontrar o texto do título e depois o link próximo
