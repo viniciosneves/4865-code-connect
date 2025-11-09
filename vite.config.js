@@ -8,5 +8,19 @@ export default defineConfig({
         environment: 'jsdom',
         setupFiles: './src/tests/setup.js',
         globals: true,
+        coverage: {
+            provider: 'v8',
+            thresholds: {
+                statements: 60,
+                branches: 60,
+                functions: 60,
+                lines: 60,
+            },
+            exclude: [
+                'node_modules',
+                'src/tests',
+                'cypress',
+            ]
+        }
     },
 })
